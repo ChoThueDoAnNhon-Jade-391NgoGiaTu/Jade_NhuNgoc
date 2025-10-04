@@ -21,23 +21,24 @@ footer {
   color: #6c757d;
 }
 
+/* Slider styles */
 .slider {
   width: 100%;
   max-width: 800px;
-  overflow: hidden;
+  overflow: hidden; /* Ẩn phần tràn ra */
   position: relative;
+  margin: 0 auto; /* Canh giữa */
 }
 
 .slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+  display: flex; /* Xếp slide ngang */
+  transition: transform 0.5s ease-in-out; /* Hiệu ứng trượt */
 }
 
 .slide {
-  min-width: 100%;
-  display: none;
+  min-width: 100%; /* Mỗi slide chiếm 100% vùng slider */
+  /* Bỏ display:none để trượt mượt */
+  /* display: block; mặc định */
+  user-select: none; /* Không cho chọn hình khi kéo */
 }
 
-.slide.active {
-  display: block;
-}
