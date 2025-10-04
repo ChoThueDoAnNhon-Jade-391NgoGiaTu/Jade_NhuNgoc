@@ -20,3 +20,24 @@ footer {
   font-size: 0.9rem;
   color: #6c757d;
 }
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
