@@ -11,98 +11,88 @@
   />
   <style>
     body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-}
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
 
-header h1 {
-  font-weight: 700;
-}
+    header h1 {
+      font-weight: 700;
+    }
 
-.card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-}
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
-footer {
-  font-size: 0.9rem;
-  color: #6c757d;
-}
+    footer {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
 
-/* Slider styles */
-.slider {
-  width: 100%;
-  max-width: 800px;
-  overflow: hidden; /* Ẩn phần tràn ra */
-  position: relative;
-  margin: 0 auto; /* Canh giữa */
-}
-
-.slides {
-  display: flex; /* Xếp slide ngang */
-  transition: transform 0.5s ease-in-out; /* Hiệu ứng trượt */
-}
-
-.slide {
-  min-width: 100%; /* Mỗi slide chiếm 100% vùng slider */
-  /* Bỏ display:none để trượt mượt */
-  /* display: block; mặc định */
-  user-select: none; /* Không cho chọn hình khi kéo */
-}
-#demo {
-  max-width: 600px; /* giảm chiều rộng carousel */
-  margin: 20px auto; /* căn giữa và cách trên dưới */
-}
-
-#demo .carousel-item img {
-  height: 300px; /* giới hạn chiều cao */
-  object-fit: cover; /* cắt ảnh cho vừa khung */
-  width: 100%;
+    .card-img-top {
+      width: 100%;
+      height: 250px; /* chiều cao cố định */
+      object-fit: cover; /* cắt ảnh vừa khung, không méo */
+    }
   </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Jade- Cho thuê đồ An Nhơn</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Trang chủ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Đồ đi tiệc</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Áo dài
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="AoDai.html">Áo dài nữ</a></li>
-            <li><a class="dropdown-item" href="AoDaiNam.html">Áo dài nam</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Liên hệ</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Jade- Cho thuê đồ An Nhơn</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Đồ đi tiệc</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Áo dài
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="AoDai.html">Áo dài nữ</a></li>
+              <li><a class="dropdown-item" href="AoDaiNam.html">Áo dài nam</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Liên hệ</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-  
+  </nav>
+
   <main class="container my-4">
     <div class="row">
-      <!-- Card sản phẩm 2 -->
-      <div class="col-md-4 mb-4">
+      <!-- Card sản phẩm 1 -->
+      <div class="col-6 col-md-3 mb-4">
         <div class="card h-100">
           <img
-            src="https://down-vn.img.susercontent.com/file/vn-11134258-820l4-mf12kldgfv9r29"
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3yoosc4js0w9f.webp"
             class="card-img-top"
             alt="Áo dài nam"
           />
@@ -115,8 +105,8 @@ footer {
         </div>
       </div>
 
-      <!-- Card sản phẩm 3 -->
-      <div class="col-md-4 mb-4">
+      <!-- Card sản phẩm 2 -->
+      <div class="col-6 col-md-3 mb-4">
         <div class="card h-100">
           <img
             src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3yt0etvz7g0b5.webp"
@@ -127,6 +117,40 @@ footer {
             <h5 class="card-title">Áo dài nam</h5>
             <p class="card-text">Thiết kế nữ tính, thoải mái cho mùa hè.</p>
             <p class="text-danger fw-bold">400.000₫</p>
+            <a href="#" class="btn btn-primary">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card sản phẩm 3 -->
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m4talihgypx44d@resize_w450_nl.webp"
+            class="card-img-top"
+            alt="Áo dài nữ"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Áo dài nữ</h5>
+            <p class="card-text">Thiết kế trẻ trung, thoải mái.</p>
+            <p class="text-danger fw-bold">420.000₫</p>
+            <a href="#" class="btn btn-primary">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card sản phẩm 4 -->
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3ytageav9f401.webp"
+            class="card-img-top"
+            alt="Quần jean nữ"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Quần jean nữ</h5>
+            <p class="card-text">Phong cách trẻ trung, dễ phối đồ.</p>
+            <p class="text-danger fw-bold">350.000₫</p>
             <a href="#" class="btn btn-primary">Mua ngay</a>
           </div>
         </div>
