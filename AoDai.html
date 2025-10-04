@@ -11,39 +11,50 @@
   />
   <style>
     body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-}
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
 
-header h1 {
-  font-weight: 700;
-}
+    header h1 {
+      font-weight: 700;
+    }
 
-.card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-}
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
-footer {
-  font-size: 0.9rem;
-  color: #6c757d;
-}
+    footer {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
 
+    .card-img-top {
+      width: 100%;
+      height: 250px; /* chiều cao cố định */
+      object-fit: cover; /* cắt ảnh vừa khung, không méo */
+    }
   </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Jade - Cho thuê đồ An Nhơn</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">Jade- Cho thuê đồ An Nhơn</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -53,8 +64,15 @@ footer {
             <a class="nav-link active" href="#">Đồ đi tiệc</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Áo dài</a>
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Áo dài
+            </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="AoDai.html">Áo dài nữ</a></li>
               <li><a class="dropdown-item" href="AoDaiNam.html">Áo dài nam</a></li>
@@ -67,39 +85,151 @@ footer {
       </div>
     </div>
   </nav>
-  
+
   <main class="container my-4">
     <div class="row">
-      <!-- Card sản phẩm 2 -->
-      <div class="col-md-4 mb-4">
+      <!-- Card sản phẩm 1 -->
+      <div class="col-6 col-md-3 mb-4">
         <div class="card h-100">
           <img
-            src="https://product.hstatic.net/1000136076/product/adtt_phuc_tho_trang4_b9e200a4c58144579ae060ab31a09aa3.png"
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mf7tvnhznr4fc4.webp"
             class="card-img-top"
-            alt="Quần jean nữ"
+            alt="Áo dài nữ"
           />
           <div class="card-body">
-            <h5 class="card-title">Quần jean nữ</h5>
-            <p class="card-text">Phong cách trẻ trung, dễ phối đồ.</p>
-            <p class="text-danger fw-bold">350.000₫</p>
-            <a href="#" class="btn btn-primary">Mua ngay</a>
+            <h5 class="card-title">Áo dài tơ voan Bạch Liên</h5>
+            <p class="card-text">Color: xanh pastel</p>
+            <p class="card-text">Brand: Havana</p>
+            <p class="text-danger fw-bold">75.000₫</p>
+            <a href="#" class="btn btn-primary">Thuê ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card sản phẩm 2 -->
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mf3vjn3r8cge41.webp"
+            class="card-img-top"
+            alt="Áo dài nữ"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Áo dài tơ voan Nhã Xuyên</h5>
+            <p class="card-text">Color: hồng pastel</p>
+            <p class="card-text">Brand: Havana</p>
+            <p class="text-danger fw-bold">75.000₫</p>
+            <a href="#" class="btn btn-primary">Thuê ngay</a>
           </div>
         </div>
       </div>
 
       <!-- Card sản phẩm 3 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-6 col-md-3 mb-4">
         <div class="card h-100">
           <img
-            src="https://thekat.vn/wp-content/uploads/2023/08/DSC01881-scaled.jpg"
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mevbsms8gdfobb.webp"
             class="card-img-top"
-            alt="Váy đầm"
+            alt="Áo dài nữ"
           />
           <div class="card-body">
-            <h5 class="card-title">Váy đầm</h5>
-            <p class="card-text">Thiết kế nữ tính, thoải mái cho mùa hè.</p>
-            <p class="text-danger fw-bold">400.000₫</p>
-            <a href="#" class="btn btn-primary">Mua ngay</a>
+            <h5 class="card-title">Áo dài tơ ren Yên Dung</h5>
+            <p class="card-text">Color: xanh pastel</p>
+            <p class="card-text">Brand: Havana</p>
+            <p class="text-danger fw-bold">75.000₫</p>
+            <a href="#" class="btn btn-primary">Thuê ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card sản phẩm 4 -->
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-820l4-metou44wevphf5.webp"
+            class="card-img-top"
+            alt="Quần jean nữ"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Áo dài tứ thân Bích Hồ</h5>
+            <p class="card-text">Color: đỏ</p>
+            <p class="card-text">Brand: Havana</p>
+            <p class="text-danger fw-bold">75.000₫</p>
+            <a href="#" class="btn btn-primary">Thuê ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Card sản phẩm 1 -->
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-820l4-metor0gw6uir38.webp"
+            class="card-img-top"
+            alt="Áo dài nữ"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Áo dài voan tơ Tuyết Mai</h5>
+            <p class="card-text">Color: đỏ</p>
+            <p class="card-text">Brand: Havana</p>
+            <p class="text-danger fw-bold">75.000₫</p>
+            <a href="#" class="btn btn-primary">Thuê ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card sản phẩm 2 -->
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mf0hrq9oozyg05@resize_w900_nl.webp"
+            class="card-img-top"
+            alt="Áo dài nữ"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Áo dài lụa Cơ Uyển</h5>
+            <p class="card-text">Color: vàng chanh</p>
+            <p class="card-text">Brand: Havana</p>
+            <p class="text-danger fw-bold">75.000₫</p>
+            <a href="#" class="btn btn-primary">Thuê ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card sản phẩm 3 -->
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mel9cs73ryti65.webp"
+            class="card-img-top"
+            alt="Áo dài nữ"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Áo dài Nguyệt Trúc</h5>
+            <p class="card-text">Color: trắng</p>
+            <p class="card-text">Brand: áo dài Mỹ An</p> 
+            <p class="text-danger fw-bold">75.000₫</p>
+            <a href="#" class="btn btn-primary">Thuê ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card sản phẩm 4 -->
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m9lhxlq6uyx0ef@resize_w900_nl.webp"
+            class="card-img-top"
+            alt="Áo dài nữ"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Áo dài Tâm Giao</h5>
+            <p class="card-text">Color: xanh pastel</p>
+            <p class="card-text">Brand: áo dài Mỹ An</p>
+            <p class="text-danger fw-bold">75.000₫</p>
+            <a src="https://www.facebook.com/profile.php?id=61577542175412" class="btn btn-primary">Thuê ngay</a>
           </div>
         </div>
       </div>
