@@ -48,15 +48,30 @@
 
     /* Thêm CSS cho container và ảnh di chuyển */
     .moving-container {
-      width: 70%;
-      opacity:0;
+      width: 50%; /* giảm xuống 50% */
+      opacity: 0;
       transform: translateX(100%);
       transition: transform 2s ease-out, opacity 2s ease-out; 
       position: relative;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin: 20px auto; /* căn giữa */
       border-radius: 30px;
       padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .moving-container img.moving-image {
+      width: 100%; /* ảnh chiếm 100% width container */
+      height: auto;
+      border-radius: 15px;
+      display: block;
+    }
+
+    /* Responsive cho màn hình nhỏ */
+    @media (max-width: 768px) {
+      .moving-container {
+        width: 90%; /* rộng hơn trên mobile */
+      }
     }
   </style>
 </head>
@@ -148,16 +163,15 @@
   <!-- Bootstrap JS Bundle (Popper + Bootstrap JS) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-              window.onload = () => {
-        setTimeout(() => {
-          const elements = document.querySelectorAll(".moving-container");
-          elements.forEach(element => {
-            element.style.transform = "translateX(0)";
-            element.style.opacity = 1;
-          });
-        }, 1000);
-      };
-
-    </script>
+    window.onload = () => {
+      setTimeout(() => {
+        const elements = document.querySelectorAll(".moving-container");
+        elements.forEach(element => {
+          element.style.transform = "translateX(0)";
+          element.style.opacity = 1;
+        });
+      }, 1000);
+    };
+  </script>
 </body>
 </html>
